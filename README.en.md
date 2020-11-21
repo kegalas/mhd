@@ -1,22 +1,7 @@
 # mhd
 
 #### Description
-我的高中资料整理，使用latex
-
-#### Software Architecture
-Software architecture description
-
-#### Installation
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+My high school documents, using latex
 
 #### Contribution
 
