@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2020.10.8)  21 NOV 2020 21:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/Arch Linux) (preloaded format=xelatex 2020.10.8)  21 NOV 2020 23:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -367,32 +367,34 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
 (Font)              size <10.95> substituted on input line 2.
 
-)
-\tf@toc=\write3
- [1
+[1
 
-]
+])
+\tf@toc=\write3
+LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393
+7> not available
+(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on
+ input line 10.
+ [2]
 Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
-LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.5393
-7> not available
-(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on
- input line 38.
-[2] [3] [4] [5] (./1.aux)
+[3] [4] [5] [6] [7]
+Missing character: There is no 时 in font [lmroman10-regular]:mapping=tex-text;!
+ [8] [9] (./1.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.41063pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 7276 strings out of 479284
- 207841 string characters out of 5886220
+ 7301 strings out of 479284
+ 208249 string characters out of 5886220
  488381 words of memory out of 5000000
- 24855 multiletter control sequences out of 15000+600000
- 537558 words of font info for 69 fonts, out of 8000000 for 9000
+ 24867 multiletter control sequences out of 15000+600000
+ 540339 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,6n,83p,361b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,14n,83p,361b,247s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 1.pdf (5 pages).
+Output written on 1.pdf (9 pages).
