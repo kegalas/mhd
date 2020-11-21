@@ -64,4 +64,36 @@
 			设$f(x)$在区间$I$上是下凸函数，则对任意$x_i\in I$及$p_i>0\quad (i=1,2,\dots,n)$，有
 			\[ \frac{\sum\limits_{i=1}^{n}p_i\cdot f(x_i)}{\sum\limits_{i=1}^{n}p_i}\geq f \left (\frac{\sum\limits_{i=1}^{n}p_i\cdot x_i}{\sum\limits_{i=1}^{n}p_i} \right ) \]
 			其中等号当且仅当$x_1=x_2=\dots=x_n$时成立，若$f(x)$在区间$I$上是上凸函数，则不等号反向。
+	\section{函数}
+		\subsection{拉格朗日中值定理}
+			设$y=f(x)$在$[a,b]$上连续，在$(a,b)$上可导，则存在$\xi \in (a,b)$使得
+			\[f^{'}(\xi)=\frac{f(b)-f(a)}{b-a}\]
+		\subsection{拉格朗日乘数法}
+			【例题】若正数$a,b$满足$2a+b=1$，则$\frac{a}{2-2a}+\frac{b}{2-b}$的最小值为?\\
+			解：构造拉格朗日函数
+			\[L(a,b,\lambda)=\frac{a}{2-2a}+\frac{b}{2-b}-\lambda(2a+b-1)\]
+			令
+			\[\frac{\partial L}{\partial a}=L_a=\frac{1}{2(1-a)^2}-2\lambda=0\]
+			\[\frac{\partial L}{\partial b}=L_b=\frac{2}{(2-b)^2}-\lambda=0\]
+			\[\frac{\partial L}{\partial \lambda}=L_\lambda=-(2a+b-1)=0\]
+			联立解得
+			\[a=\frac{5-3\sqrt{2}}{2},b=3\sqrt{2}-4,\lambda=\frac{1}{27-18\sqrt{2}}\]
+			从而
+			\[\frac{a}{2-2a}+\frac{b}{2-b}=\frac{2\sqrt{2}}{3}-\frac{1}{2}\]
+			此即为所求的最小值。
+		\subsection{高次韦达定理}
+			设$x_1,x_2,\dots,x_n$为如下方程的根
+			\[a_n x^n+a_{n-1} x^{n-1}+\dots+a_1 x+a_0=0\]
+			则有
+			\[x_1+x_2+\dots+x_n=-\frac{a_{n-1}}{a_n}\]
+			\[x_1 x_2+x_1 x_3+\dots+x_n x_{n-1}=\frac{a_{n-2}}{a_n}\]
+			\[\dots\]
+			\[x_1 x_2\dots x_n=(-1)^n \frac{a_0}{a_n}\]
+			其中三次的形式如下\\
+			若$ax^3+bx^2+cx+d=0\ (a\neq 0)$的3个根分别为$x_1,x_2,x_3$则有
+			\[x_1+x_2+x_3=-\frac{b}{a}\]
+			\[x_1 x_2+x_1 x_3+x_2 x_3=\frac{c}{a}\]
+			\[x_1\cdot x_2\cdot x_3=-\frac{d}{a}\]		
+		\subsection{切比雪夫最佳逼近}
+		\subsection{泰勒展开}
 \end{document}

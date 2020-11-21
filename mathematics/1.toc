@@ -6,3 +6,9 @@
 \contentsline {subsection}{\numberline {1.5}权方和不等式}{3}%
 \contentsline {subsection}{\numberline {1.6}舒尔不等式}{4}%
 \contentsline {subsection}{\numberline {1.7}琴生不等式}{4}%
+\contentsline {section}{\numberline {2}函数}{4}%
+\contentsline {subsection}{\numberline {2.1}拉格朗日中值定理}{4}%
+\contentsline {subsection}{\numberline {2.2}拉格朗日乘数法}{4}%
+\contentsline {subsection}{\numberline {2.3}高次韦达定理}{5}%
+\contentsline {subsection}{\numberline {2.4}切比雪夫最佳逼近}{5}%
+\contentsline {subsection}{\numberline {2.5}泰勒展开}{5}%
