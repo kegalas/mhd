@@ -94,9 +94,28 @@
 			\[x_1+x_2+x_3=-\frac{b}{a}\]
 			\[x_1 x_2+x_1 x_3+x_2 x_3=\frac{c}{a}\]
 			\[x_1\cdot x_2\cdot x_3=-\frac{d}{a}\]		
-		\subsection{切比雪夫最佳逼近}
 		\subsection{泰勒展开}
+			若函数$f(x)$在$x_0$存在$n$阶导数，则有
+			\[f(x)=f(x_0)+\frac{f'(x_0)}{1!}(x-x_0)+\frac{f''(x_0)}{2!}(x-x_0)^2+\dots+\frac{f^{(n)} (x_0)}{n!}(x-x_0)^n+R_{n+1}\]
+			上式即为函数$f(x)$在$x_0$处的泰勒展开式，其中$R_{n+1}=\frac{f^{(n+1)} (\xi)}{(n+1)!}(x-x_0)^{n+1}$（其中$\xi$介于$x$和$x_0$间）叫做拉格朗日余项。\\
+			拉格朗日余项可用于证明不等式。如：\\
+			$-1<x<1$时
+			\[\ln(1+x)=x-\frac{x^2}{2}+\frac{x^3}{3}-\frac{x^4}{4(1+\xi)^4} (-1<\xi<1)\]
+			因为$-\frac{x^4}{4(1+\xi)^4}\leq 0$，所以$\ln(1+x)\leq x-\frac{x^2}{2}+\frac{x^3}{3}$
 		\subsection{极值点偏移}
+			【例题】已知函数$f(x)=e^x-ax$有两个零点$x_1$和$x_2$，证明：$x_1 +x_2 >2$\\
+			\[f(x)=e^x-ax=0\Leftrightarrow \frac{e^x}{x}=a\]
+			令\[\varphi(x)=\frac{e^x}{x}\]
+			则\[f(x_1)=f(x_2)\Leftrightarrow\varphi(x_1)=\varphi(x_2),\quad \varphi'(x)=\frac{(x-1)e^x}{x^2}\]
+			因此$\varphi(x)$在$(0,1)$单减，$(1,+\infty)$单增，不妨设$0<x_1<1<x_2$\\
+			则$x_1+x_2>2\Leftrightarrow x_2>2-x_1$，注意到$2-x_1>1$\\
+			$\Leftrightarrow\varphi(x_2)>\varphi(2-x_1)$，注意到$\varphi(x_1)=\varphi(x_2)$\\
+			则$\varphi(x_1)>\varphi(2-x_1)$，其中$0<x_1<1$\\
+			令\[g(x)=\varphi(x)-\varphi(2-x), \quad 0<x<1\]
+			易知
+			\[g'(x)<0\]
+			所以$g(x)$在$(0,1)$上单减，$g(x)>g(1)=\varphi(1)-\varphi(1)=0$\\
+			即$\varphi(x)-\varphi(2-x)>0$，令$x=x_1$，Q.E.D.
 		\subsection{最值函数基本定理}
 			定理一:
 			\[min\left\{a,b\right\}\leq\frac{a+b}{2}\leq max\left\{a,b\right\}\]
@@ -141,6 +160,16 @@
 		\subsection{向量数乘余弦定理}
 			在$\triangle ABC$中,有
 			\[\overrightarrow{AB}\cdot \overrightarrow{AC}=\frac{AB^2+AC^2-BC^2}{2}\]
+	\section{圆锥曲线}
+		\subsection{仿射变换}
+	\section{三角}
+		\subsection{和差化积}
+			
+		\subsection{积化和差}
+			
+		\subsection{半角公式}
+		
+		\subsection{诱导公式}
 	\section{方法}
 		\subsection{主元法}
 			【例题】已知函数$f(x)=\lg \frac{1+2^x+4^x \cdot a}{a^2-a+1} $，其中$a$为常数，若当$x \in \left(-\infty ,1 \right] $时，$f(x)$有意义，求实数$a$的取值范围\\
