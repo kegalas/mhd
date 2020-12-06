@@ -160,16 +160,55 @@
 		\subsection{向量数乘余弦定理}
 			在$\triangle ABC$中,有
 			\[\overrightarrow{AB}\cdot \overrightarrow{AC}=\frac{AB^2+AC^2-BC^2}{2}\]
-	\section{圆锥曲线}
-		\subsection{仿射变换}
 	\section{三角}
 		\subsection{和差化积}
-			
+			\[sin\alpha+sin\beta=2sin\frac{\alpha+\beta}{2}\cdot cos\frac{\alpha-\beta}{2}\]
+			\[sin\alpha-sin\beta=2cos\frac{\alpha+\beta}{2}\cdot sin\frac{\alpha-\beta}{2}\]
+			\[cos\alpha+cos\beta=2cos\frac{\alpha+\beta}{2}\cdot cos\frac{\alpha-\beta}{2}\]
+			\[cos\alpha-cos\beta=-2sin\frac{\alpha+\beta}{2}\cdot sin\frac{\alpha-\beta}{2}\]
 		\subsection{积化和差}
-			
+			\[sin\alpha cos\beta=\frac{1}{2}\left[sin(\alpha+\beta)+sin(\alpha-\beta)\right]\]
+			\[cos\alpha sin\beta=\frac{1}{2}\left[sin(\alpha+\beta)-sin(\alpha-\beta)\right]\]
+			\[cos\alpha cos\beta=\frac{1}{2}\left[cos(\alpha+\beta)+cos(\alpha-\beta)\right]\]
+			\[sin\alpha sin\beta=-\frac{1}{2}\left[cos(\alpha+\beta)-cos(\alpha-\beta)\right]\]
 		\subsection{半角公式}
-		
-		\subsection{诱导公式}
+			\[sin\frac{\theta}{2}=\pm \sqrt{\frac{1-cos\alpha}{2}}\]
+			\[sin\frac{\theta}{2}=\pm \sqrt{\frac{1+cos\alpha}{2}}\]
+			\[tan\frac{\theta}{2}=\pm \sqrt{\frac{1-cos\alpha}{1+cos\alpha}}=\frac{sin\alpha}{1+cos\alpha}=\frac{1-cos\alpha}{sin\alpha}\]
+	\section{统计、概率、分布}
+		\subsection{期望、方差、标准差}
+			数学期望：我们称$E\xi = x_1 p_1+x_2 p_2+\dots+x_n p_n$为离散型随机变量$\xi$的数学期望\\
+			\indent 方差和标准差：我们称$D\xi = \sum_{i=1}^{n}(x_i-E\xi)^2 p_i$为离散型随机变量$\xi$的方差，其算数平方根$\sqrt{D\xi}=\sigma\xi$叫做离散型随机变量$\xi$的标准差\\
+			\\
+			定理一：
+			\[E(a\xi+b)=aE\xi+b\]
+			\[D(a\xi+b)=a^2 D\xi\]
+			定理二：
+			\[E(a\xi _1+b\xi _2)=aE\xi _1+bE\xi _2\]
+		\subsection{二项分布}
+			n次试验中事件A恰好发生k次
+			\[P(E) ={n \choose k}p^k (1-p)^{n-k}\quad k=1,2,3,\dots\]
+			我们称$\xi$服从二项分布，记作$\xi \sim B(n,p)$\\
+			定理：$E\xi = np$,	$D\xi = np(1-p)$
+		\subsection{正态分布}
+			\[f_\xi (x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma ^2}} \quad x\in R,\sigma>0\]
+			记作$\xi \sim N(\mu,\sigma ^2)$\\
+			性质：1.其正态曲线关于$x=\mu$对称，最高点为$\frac{1}{\sigma\sqrt{2\pi}}$\\
+			2.$E\xi=\mu,D\xi=\sigma ^2$\\
+			3.$\sigma$越大，正态曲线越“矮胖”，表示分布越分散，$\sigma$越小，正态曲线越“瘦高”，表示分布越集中
+		\subsection{几何分布}
+			在n次伯努利试验中，试验k次才得到第一次成功的机率。\\
+			记为$P(\xi=k)=g(k,p)=q^{k-1}p$,其中$q=1-p$，也记为$\xi \sim GE(p)$\\
+			定理：$E\xi=\frac{1}{p},D\xi=\frac{q}{p^2}$
+		\subsection{超几何分布}
+			它描述了从有限N个物件（其中包含M个指定种类的物件）中抽出n个物件，成功抽出该指定种类的物件的次数（不放回）\\
+			记为$\eta \sim H(n,M,N)$
+			\[P\left ( \eta=m\right ) = \frac{\binom{M}{m}\cdot \binom{N-M}{n-m}}{\binom{N}{n}}\quad m=0,1,2,\dots,min \left\{ n,M \right\}\]
+	\section{方程}
+		\subsection{立方和分解}
+			\[a^3+b^3=(a+b)(a^2-ab+b^2)\]
+		\subsection{立方差分解}
+			\[a^3-b^3=(a-b)(a^2+ab+b^2)\]
 	\section{方法}
 		\subsection{主元法}
 			【例题】已知函数$f(x)=\lg \frac{1+2^x+4^x \cdot a}{a^2-a+1} $，其中$a$为常数，若当$x \in \left(-\infty ,1 \right] $时，$f(x)$有意义，求实数$a$的取值范围\\
