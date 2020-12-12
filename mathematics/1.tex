@@ -1,5 +1,6 @@
 \documentclass[UTF8]{ctexart}
 \usepackage{amsmath}
+\usepackage{siunitx}
 \title{数学整理}
 \author{o7k40shen}
 \date{\today}
@@ -64,6 +65,8 @@
 			设$f(x)$在区间$I$上是下凸函数，则对任意$x_i\in I$及$p_i>0\quad (i=1,2,\dots,n)$，有
 			\[ \frac{\sum\limits_{i=1}^{n}p_i\cdot f(x_i)}{\sum\limits_{i=1}^{n}p_i}\geq f \left (\frac{\sum\limits_{i=1}^{n}p_i\cdot x_i}{\sum\limits_{i=1}^{n}p_i} \right ) \]
 			其中等号当且仅当$x_1=x_2=\dots=x_n$时成立，若$f(x)$在区间$I$上是上凸函数，则不等号反向。
+		\subsection{绝对值不等式}
+			\[||a|-|b|| \leq |a\pm b| \leq |a|+|b|\]
 	\section{函数}
 		\subsection{拉格朗日中值定理}
 			设$y=f(x)$在$[a,b]$上连续，在$(a,b)$上可导，则存在$\xi \in (a,b)$使得
@@ -175,6 +178,8 @@
 			\[sin\frac{\theta}{2}=\pm \sqrt{\frac{1-cos\alpha}{2}}\]
 			\[sin\frac{\theta}{2}=\pm \sqrt{\frac{1+cos\alpha}{2}}\]
 			\[tan\frac{\theta}{2}=\pm \sqrt{\frac{1-cos\alpha}{1+cos\alpha}}=\frac{sin\alpha}{1+cos\alpha}=\frac{1-cos\alpha}{sin\alpha}\]
+		\subsection{辅助角公式}
+			\[asin\theta\pm bcos\theta=\sqrt{a^2+b^2}sin(\theta\pm\varphi),\quad tan\varphi=\frac{b}{a}\]
 	\section{统计、概率、分布}
 		\subsection{期望、方差、标准差}
 			数学期望：我们称$E\xi = x_1 p_1+x_2 p_2+\dots+x_n p_n$为离散型随机变量$\xi$的数学期望\\
@@ -209,10 +214,30 @@
 			\[a^3+b^3=(a+b)(a^2-ab+b^2)\]
 		\subsection{立方差分解}
 			\[a^3-b^3=(a-b)(a^2+ab+b^2)\]
+	\section{几何}
+		\subsection{射影定理}
+			射影定理，又称“欧几里德定理”：在直角三角形中，斜边上的高是两条直角边在斜边射影的比例中项，每一条直角边又是这条直角边在斜边上的射影和斜边的比例中项。\\
+			\\
+			在$Rt\bigtriangleup  ABC$中,$\angle ABC=\ang{90}$,$BD$为斜边$AC$上的高，则有射影定理如下：
+			\[BD^2=AD\cdot CD\]
+			\[AB^2=AC\cdot AD\]
+			\[BC^2=CD\cdot AC\]
+		\subsection{阿波罗尼斯圆}
+			平面内到两个定点的距离之比为常数$k(k\neq1)$的点的轨迹是圆
+		\subsection{角平分线定理}
+			在$\bigtriangleup ABC$中，$AM$为$\angle BAC$的角平分线，$M$在$BC$上，则有：
+			\[\frac{AB}{AC}=\frac{MB}{MC}\]
 	\section{方法}
 		\subsection{主元法}
-			【例题】已知函数$f(x)=\lg \frac{1+2^x+4^x \cdot a}{a^2-a+1} $，其中$a$为常数，若当$x \in \left(-\infty ,1 \right] $时，$f(x)$有意义，求实数$a$的取值范围\\
-			由$\frac{1+2^x+4^x \cdot a}{a^2-a+1}>0$，且$a^2-a+1=(a-\frac{1}{2})^2+\frac{3}{4}>0$\\
-			得$1+2^x+4^x \cdot a>0$，故$a>-(\frac{1}{4^x}+\frac{1}{2^x})$\\
-			当$x \in \left(-\infty ,1 \right] $时，$y=\frac{1}{4^x}$和$y=\frac{1}{2^x}$都是减函数，所以$y=-(\frac{1}{4^x}+\frac{1}{2^x})$单增，且其最大值为$-\frac{3}{4}$，所以$a$取值为$\left( -\frac{3}{4}, +\infty \right) $
+			【例题】对任意$m\in [-1,1]$,函数$f(x)=x^2+(m-4)x+4-2m$的值恒大于零，求$x$的取值范围。\\
+			\[f(x)=x^2+(m-4)x+4-2m=(x-2)m+x^2-4x+4\]
+			令
+			\[g(m)=(x-2)m+x^2-4x+4\]
+			所以有
+			\[\begin{cases}
+				g(-1)=(x-2)(-1)+x^2-4x+4>0
+				\\
+				g(1)=(x-2)\cdot 1+x^2-4x+4>0
+			\end{cases}\]
+			解得$x<1 $或$ x>3$
 \end{document}
