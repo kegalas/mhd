@@ -209,11 +209,26 @@
 			它描述了从有限N个物件（其中包含M个指定种类的物件）中抽出n个物件，成功抽出该指定种类的物件的次数（不放回）\\
 			记为$\eta \sim H(n,M,N)$
 			\[P\left ( \eta=m\right ) = \frac{\binom{M}{m}\cdot \binom{N-M}{n-m}}{\binom{N}{n}}\quad m=0,1,2,\dots,min \left\{ n,M \right\}\]
+			其中有：
+			\[E(X)=\frac{nM}{N}\]
+			\[D(X)=\frac{nM}{N}\left(1-\frac{M}{N}\right)\frac{N-n}{N-1}\]
+
+
 	\section{方程}
 		\subsection{立方和分解}
 			\[a^3+b^3=(a+b)(a^2-ab+b^2)\]
 		\subsection{立方差分解}
 			\[a^3-b^3=(a-b)(a^2+ab+b^2)\]
+		\subsection{比例性质}
+			若$\frac{a}{b}=\frac{c}{d}$则有：\\
+			合比性质
+			\[\frac{a+b}{b}=\frac{c+d}{d}\]
+			分比性质
+			\[\frac{a-b}{b}=\frac{c-d}{d}\]
+			合分比性质
+			\[\frac{a+b}{a-b}=\frac{c+d}{c-d}\]
+			等比性质
+			\[\frac{a}{b}=\frac{c}{d}=\frac{a+c}{b+d}=\frac{ma+nc}{mb+nd}\]
 	\section{几何}
 		\subsection{射影定理}
 			射影定理，又称“欧几里德定理”：在直角三角形中，斜边上的高是两条直角边在斜边射影的比例中项，每一条直角边又是这条直角边在斜边上的射影和斜边的比例中项。\\
